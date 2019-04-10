@@ -21,7 +21,7 @@ public class TestPermGen {
             URLClassLoader urlClassloader = new URLClassLoader(urls, null);
             Class<?> logfCLass = Class.forName("org.apache.commons.logging.LogFactory", true, urlClassloader);
             Method getLog = logfCLass.getMethod("getLog", String.class);
-            Object result = getLog.invoke(logfCLass, "TestPermGen");
+            Object result = getLog.invoke(logfCLass, "TestPermqGen");
             insList.add(result);
             System.out.println(i + ": " + result);
 
