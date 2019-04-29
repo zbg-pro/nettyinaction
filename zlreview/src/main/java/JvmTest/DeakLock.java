@@ -15,8 +15,14 @@ public class DeakLock {
         myTh1.setName("DeadLock-1 ");
         myTh0.setName("DeadLock-0 ");
 
-        myTh1.start();
-        myTh0.start();
+        //myTh1.start();
+        //myTh0.start();
+
+        new StringBuffer("").reverse().toString();
+        int j = (100-1) >> 1;
+        int a = 4;
+        a <<= 1;
+        System.out.println(j+"---"+a);
     }
 
 }
@@ -64,6 +70,8 @@ class LockThread0 extends Thread {
     public LockThread0(Resource r1, Resource r2) {
         this.r1 = r1;
         this.r2 = r2;
+
+
     }
 
     @Override
