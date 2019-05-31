@@ -1,5 +1,6 @@
 package JvmTest;
 
+import org.junit.Test;
 import sun.misc.Unsafe;
 
 import java.lang.reflect.Field;
@@ -12,7 +13,8 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class ReadBlackTree {
 
-    public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
+
+    public void testCas() throws Exception {
         Map aa = new HashMap();
         aa.put("dd", "11");
         aa.get("dd");
@@ -27,10 +29,12 @@ public class ReadBlackTree {
         //unsafe.compareAndSwapObject()
 
         unsafe.compareAndSwapLong(null, 12l, 9l, 6l);
+    }
 
-
-
-
+    @Test
+    public void test1(){
 
     }
+
+
 }
