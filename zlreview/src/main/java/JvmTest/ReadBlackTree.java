@@ -1,6 +1,6 @@
 package JvmTest;
 
-import org.junit.Test;
+
 import sun.misc.Unsafe;
 
 import java.lang.reflect.Field;
@@ -31,7 +31,7 @@ public class ReadBlackTree {
         unsafe.compareAndSwapLong(null, 12l, 9l, 6l);
     }
 
-    @Test
+
     public void test1(){
 
     }
